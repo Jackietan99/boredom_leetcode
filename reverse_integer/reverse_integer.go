@@ -1,17 +1,5 @@
 package reverse_integer
 
-import "fmt"
-
-func main() {
-
-	num := -2147483412
-
-	result := reverse(num)
-
-	fmt.Println(result)
-
-}
-
 func reverse(x int) int {
 	var min int = 0x8000000
 	var max int = 0x7FFFFFF

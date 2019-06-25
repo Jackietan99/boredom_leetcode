@@ -1,9 +1,5 @@
 package add_two_number
 
-import (
-	"fmt"
-)
-
 /*
 	You are given two non-empty linked lists
 	representing two non-negative integers.
@@ -80,61 +76,4 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 	node.Next = next
 	return node
-}
-
-func main() {
-	////l1
-	//l1 := new(ListNode)
-	//l1.Val=1
-	//next1 := new(ListNode)
-	//next1.Val = 4
-	//next2 := new(ListNode)
-	//next2.Val =3
-	//l1.Next = next1
-	//next1.Next = next2
-	//
-	////PrintNodes(l1)
-	//
-	//l2 := new(ListNode)
-	//l2.Val=5
-	//next3 := new(ListNode)
-	//next3.Val = 6
-	//next4 := new(ListNode)
-	//next4.Val =4
-	//l2.Next = next3
-	//next3.Next = next4
-	////PrintNodes(l2)
-
-	//l1
-	l1 := new(ListNode)
-	l1.Val = 1
-	next1 := new(ListNode)
-	next1.Val = 4
-	next2 := new(ListNode)
-	next2.Val = 3
-	l1.Next = next1
-	next1.Next = next2
-
-	//PrintNodes(l1)
-
-	l2 := new(ListNode)
-	l2.Val = 5
-	next3 := new(ListNode)
-	next3.Val = 6
-	next4 := new(ListNode)
-	next4.Val = 4
-	l2.Next = next3
-	next3.Next = next4
-
-	numbers := addTwoNumbers(l1, l2)
-
-	PrintNodes(numbers)
-
-}
-
-func PrintNodes(n *ListNode) {
-	fmt.Println(n.Val)
-	if n.Next != nil {
-		PrintNodes(n.Next)
-	}
 }

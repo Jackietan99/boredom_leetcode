@@ -1,13 +1,5 @@
 package two_sum
 
-import "fmt"
-
-func main() {
-	given := []int{2, 7, 11, 15}
-	result := twoSum(given, 9)
-	fmt.Println(result)
-}
-
 func twoSum(nums []int, target int) []int {
 	//var result [2]int
 	var num1 int
